@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="stilo.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>CV - Maria Fernanda Rodriguez García</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm py-3">
+        <div class="container-fluid px-md-5">
+            <a class="navbar-brand text-dark-blue fs-4" href="#" onclick="showSection('inicio')">CV | Maria Fernanda</a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto font-nav">
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="showSection('inicio')">INICIO</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="showSection('perfil')">PERFIL</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="showSection('habilidades')">HABILIDADES</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="showSection('proyectos')">PROYECTOS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="showSection('conocimientos')">CONOCIMIENTOS</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Fondo global azul oscuro -->
+    <div class="global-background"></div>
+
+    <!-- Contenedor Principal Dinámico -->
+    <main class="container main-container">
+        
+        <!-- SECCIÓN 1: INICIO (Tarjeta de Presentación) -->
+        <section id="inicio" class="content-section active-section">
+            <div class="hero-card shadow-lg mx-auto">
+                <div class="row g-0">
+                    <!-- Mitad Izquierda: Foto -->
+                    <div class="col-12 col-md-5 hero-photo">
+                        <img src="imagencv.jpeg" alt="Maria Fernanda Rodriguez García">
+                    </div>
+                    
+                    <!-- Mitad Derecha: Información Personal -->
+                    <div class="col-12 col-md-7 hero-info">
+                        <h1 class="hero-name">Maria Fernanda Rodriguez García</h1>
+                        
+                        <!-- Formación ubicada debajo del nombre -->
+                        <div class="hero-subtitle mb-4" style="line-height: 1.4;">
+                            Licenciatura en Informática<br>
+                            <span style="font-size: 0.85rem; font-weight: 500; color: var(--color-text-muted);">
+                                Facultad de Estudios Superiores - UNAM, Cuautitlán | 7.º Semestre
+                            </span>
+                        </div>
+                        
+                        <div class="hero-details mt-3">
+                            <div class="detail-item">
+                                <strong>Teléfono:</strong>
+                                <span>5616774827</span>
+                            </div>
+                            <div class="detail-item">
+                                <strong>Email:</strong>
+                                <span>fergarc333@gmail.com</span>
+                            </div>
+                            <div class="detail-item">
+                                <strong>Dirección:</strong>
+                                <span>Calle Guillermo Prieto, Col. El Gavillero, 256, 54459 Nicolás Romero</span>
+                            </div>
+                            <div class="detail-item">
+                                <strong>Fecha de nacimiento:</strong>
+                                <span>24 de febrero de 2005 (Reynosa, Tamaulipas)</span>
+                            </div>
+                            <div class="detail-item">
+                                <strong>Perfil:</strong>
+                                <span>Mexicana | Mujer | Inglés (Nivel: B1)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Barra inferior oscura (Solo Contacto) -->
+                <div class="hero-footer">
+                    <a href="mailto:fergarc333@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <a href="tel:5616774827"><i class="fas fa-phone"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 2: PERFIL -->
+        <section id="perfil" class="content-section" style="display: none;">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-8">
+                    <!-- Perfil -->
+                    <div class="mb-4">
+                        <h3 class="section-title text-white">Perfil</h3>
+                        <div class="content-box">
+                            <p class="text-justify text-muted-dark small mb-0" style="line-height: 1.8;">
+                                Estudiante de 7.º semestre de la Licenciatura en Informática en la UNAM, con una sólida formación académica en desarrollo web, gestión de bases de datos y diseño de sistemas. Mi trayectoria combinando los estudios con la operación de establecimientos y la atención al cliente me ha brindado una gran capacidad de adaptación, comunicación asertiva y una perspectiva orientada a la resolución práctica de problemas diarios. Me considero una persona organizada, responsable y con una disposición genuina para el aprendizaje continuo, lo que me facilita integrarme en dinámicas de trabajo colaborativo. Busco una oportunidad profesional donde pueda aplicar las bases técnicas que he adquirido, apoyar en la implementación de soluciones tecnológicas y seguir formándome dentro del sector de las Tecnologías de la Información.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 3: HABILIDADES -->
+        <section id="habilidades" class="content-section" style="display: none;">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-8">
+                    <div class="mb-4">
+                        <h3 class="section-title text-white">Habilidades</h3>
+                        <div class="content-box">
+                            <ul class="text-muted-dark small ps-3 mb-0" style="line-height: 2;">
+                                <li>Pensamiento lógico y analítico</li>
+                                <li>Resolución de problemas</li>
+                                <li>Trabajo en equipo y colaboración</li>
+                                <li>Creatividad e iniciativa</li>
+                                <li>Responsabilidad y compromiso</li>
+                                <li>Disposición para aprender nuevas tecnologías</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 4: PROYECTOS -->
+        <section id="proyectos" class="content-section" style="display: none;">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-10">
+                    <h3 class="section-title text-white mb-4">Proyectos Destacados</h3>
+                    
+                    <!-- Proyecto 1 -->
+                    <div class="content-box mb-4">
+                        <h5 class="text-dark-blue fw-bold mb-1"><i class="fas fa-cubes me-2"></i> Seasoning - Sistema de Gestión Empresarial</h5>
+                        <h6 class="text-primary-accent small mb-2">Proyecto académico | Desarrollo web y base de datos</h6>
+                        <p class="text-muted-dark small mb-3">
+                            Desarrollo de un sistema web para gestionar inventario, producción, compras y ventas de una empresa de condimentos. Diseño de una base de datos relacional y automatización de procesos para mejorar el control de información y apoyar la toma de decisiones.
+                        </p>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="tag-tech">HTML</span> <span class="tag-tech">CSS</span> 
+                            <span class="tag-tech">JavaScript</span> <span class="tag-tech">Bootstrap</span> 
+                            <span class="tag-tech">PHP</span> <span class="tag-tech">MYSQL</span> 
+                            <span class="tag-tech">XAMPP</span> <span class="tag-tech">phpMyAdmin</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Proyecto 2 -->
+                    <div class="content-box mb-4">
+                        <h5 class="text-dark-blue fw-bold mb-1"><i class="fas fa-futbol me-2"></i> Club FES Deportiva - Sistema Escolar</h5>
+                        <h6 class="text-primary-accent small mb-2">Proyecto académico | Desarrollo web Front-end</h6>
+                        <p class="text-muted-dark small mb-3">
+                            Desarrollo de una plataforma digital responsiva orientada a la difusión de eventos, noticias y disciplinas deportivas para la comunidad universitaria de la FESC. Implementación de menús interactivos, sección de transmisiones en vivo y renderizado dinámico del catálogo de deportes utilizando JavaScript puro para garantizar una navegación óptima e intuitiva.
+                        </p>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="tag-tech">HTML</span> <span class="tag-tech">CSS</span> 
+                            <span class="tag-tech">JavaScript</span> <span class="tag-tech">Diseño Responsivo</span> 
+                            <span class="tag-tech">UI/UX</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Proyecto 3 -->
+                    <div class="content-box mb-4">
+                        <h5 class="text-dark-blue fw-bold mb-1"><i class="fas fa-baby me-2"></i> Movi-Baby - Sistema Inteligente (IoT)</h5>
+                        <h6 class="text-primary-accent small mb-2">Proyecto académico | Hardware e Internet de las Cosas (IoT)</h6>
+                        <p class="text-muted-dark small mb-3">
+                            Desarrollo de un sistema automatizado para cunas con el objetivo de mejorar la comodidad del bebé y permitir la supervisión a distancia mediante el monitoreo de temperatura, humedad, movimiento y sonido. Implementación de un microcontrolador Arduino que genera reportes ambientales periódicos y activa automáticamente un servomotor al detectar llanto para tranquilizar al infante.
+                        </p>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="tag-tech">C++</span> <span class="tag-tech">Arduino Uno</span> 
+                            <span class="tag-tech">Sensores (PIR, DHT11)</span> 
+                            <span class="tag-tech">Servomotores</span> <span class="tag-tech">Electrónica</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 5: CONOCIMIENTOS (Estilo Accordion Flush) -->
+        <section id="conocimientos" class="content-section" style="display: none;">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-10">
+                    <h3 class="section-title text-white mb-4">Conocimientos Técnicos</h3>
+                    
+                    <div class="content-box p-4">
+                        <div class="accordion accordion-flush" id="accordionConocimientos">
+                            
+                            <!-- Conocimiento 1: Desarrollo de Software -->
+                            <div class="accordion-item border-bottom">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed bg-transparent text-dark-blue fw-bold shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                        <i class="fas fa-code text-primary-accent me-2"></i> Desarrollo de Software
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionConocimientos">
+                                    <div class="accordion-body text-muted-dark small">
+                                        Fundamentos de programación, Programación Orientada a Objetos (POO), diseño de algoritmos y estructuras de control utilizando <i class="fab fa-java text-primary-accent mx-1"></i> Java y C++.
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Conocimiento 2: Desarrollo Web -->
+                            <div class="accordion-item border-bottom">
+                                <h2 class="accordion-header" id="flush-headingTwo">
+                                    <button class="accordion-button collapsed bg-transparent text-dark-blue fw-bold shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                        <i class="fas fa-globe text-primary-accent me-2"></i> Desarrollo Web (Front-end y Back-end)
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionConocimientos">
+                                    <div class="accordion-body text-muted-dark small">
+                                        Estructura, diseño responsivo (UI/UX) y programación de sitios web y aplicaciones dinámicas empleando HTML, CSS, JavaScript, PHP y Bootstrap.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Conocimiento 3: Bases de Datos -->
+                            <div class="accordion-item border-bottom">
+                                <h2 class="accordion-header" id="flush-headingThree">
+                                    <button class="accordion-button collapsed bg-transparent text-dark-blue fw-bold shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                        <i class="fas fa-database text-primary-accent me-2"></i> Bases de Datos
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionConocimientos">
+                                    <div class="accordion-body text-muted-dark small">
+                                        Diseño, modelado lógico (Entidad-Relación), normalización, creación de triggers y administración básica de bases de datos relacionales con MySQL y SQL Server.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Conocimiento 4: IoT -->
+                            <div class="accordion-item border-bottom">
+                                <h2 class="accordion-header" id="flush-headingFour">
+                                    <button class="accordion-button collapsed bg-transparent text-dark-blue fw-bold shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                                        <i class="fas fa-microchip text-primary-accent me-2"></i> Electrónica, IoT y Automatización
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionConocimientos">
+                                    <div class="accordion-body text-muted-dark small">
+                                        Fundamentos de sistemas embebidos y desarrollo de proyectos integrando microcontroladores (Arduino, ESP32), actuadores y sensores (PIR, temperatura DHT11, sonido).
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Conocimiento 5: Herramientas -->
+                            <div class="accordion-item border-bottom">
+                                <h2 class="accordion-header" id="flush-headingFive">
+                                    <button class="accordion-button collapsed bg-transparent text-dark-blue fw-bold shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                                        <i class="fas fa-cogs text-primary-accent me-2"></i> Herramientas y entornos de desarrollo
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionConocimientos">
+                                    <div class="accordion-body text-muted-dark small">
+                                        <i class="fas fa-terminal text-primary-accent me-1"></i> Visual Studio Code, NetBeans, IntelliJ IDEA, XAMPP y phpMyAdmin; entornos para programación en Java y C/C++, desarrollo y pruebas de aplicaciones web.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Conocimiento 6: Ofimática -->
+                            <div class="accordion-item border-0">
+                                <h2 class="accordion-header" id="flush-headingSix">
+                                    <button class="accordion-button collapsed bg-transparent text-dark-blue fw-bold shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                                        <i class="fas fa-file-alt text-primary-accent me-2"></i> Ofimática y Gestión de Información
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionConocimientos">
+                                    <div class="accordion-body text-muted-dark small">
+                                        Procesamiento de datos, elaboración de reportes, presentaciones y hojas de cálculo con Microsoft Office.
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Script para cambiar entre secciones -->
+    <script>
+        function showSection(sectionId) {
+            // Ocultar todas las secciones
+            var sections = document.querySelectorAll('.content-section');
+            sections.forEach(function(section) {
+                section.style.display = 'none';
+            });
+            
+            // Mostrar la sección seleccionada
+            var activeSection = document.getElementById(sectionId);
+            if (activeSection) {
+                activeSection.style.display = 'block';
+                // Añadir una pequeña animación de entrada
+                activeSection.style.animation = 'fadeIn 0.5s';
+            }
+            
+            // Si estamos en dispositivos móviles, cerrar el menú al hacer clic
+            var navbarCollapse = document.getElementById('navbarNav');
+            if (navbarCollapse.classList.contains('show')) {
+                var bsCollapse = new bootstrap.Collapse(navbarCollapse, {toggle: false});
+                bsCollapse.hide();
+            }
+        }
+    </script>
+</body>
+</html>

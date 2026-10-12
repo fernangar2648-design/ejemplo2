@@ -1,0 +1,256 @@
+/* ==========================================================================
+   TEMA: DEEP INDIGO & MAGENTA (Basado en la paleta personalizada)
+   ========================================================================== */
+
+:root {
+    /* Paleta Personalizada */
+    --color-indigo: #21007F;    /* Azul/Morado profundo */
+    --color-magenta: #D86ACA;   /* Rosa/Magenta vibrante */
+    --color-plum: #500054;      /* Ciruela/Morado oscuro */
+
+    /* Colores estructurales */
+    --color-card-bg: #ffffff;
+    --color-text-main: #334155; /* Gris oscuro para textos largos (mejora lectura) */
+    --color-text-muted: #64748b;
+    
+    /* Variables de uso */
+    --color-heading: var(--color-indigo);
+    --color-accent: var(--color-magenta);
+}
+
+body {
+    background-color: var(--color-indigo);
+    font-family: 'Montserrat', sans-serif;
+    color: var(--color-text-main);
+    overflow-x: hidden;
+}
+
+/* =========================================
+   FONDO GLOBAL (Estilo App Moderna)
+   ========================================= */
+.global-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    /* Degradado utilizando tu Índigo profundo y tu Morado oscuro */
+    background: linear-gradient(135deg, var(--color-indigo) 0%, var(--color-plum) 100%);
+    z-index: -1;
+}
+
+.main-container {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    min-height: 100vh;
+}
+
+/* =========================================
+   BARRA DE NAVEGACIÓN
+   ========================================= */
+.navbar-custom {
+    background-color: rgba(255, 255, 255, 0.95) !important;
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid var(--color-magenta); /* Acento sutil en la barra */
+}
+
+.navbar-brand {
+    font-weight: 700;
+    color: var(--color-indigo) !important;
+    letter-spacing: -0.5px;
+    cursor: pointer;
+}
+
+.font-nav .nav-link {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--color-text-muted) !important;
+    margin-left: 1rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.font-nav .nav-link:hover {
+    color: var(--color-magenta) !important;
+}
+
+/* =========================================
+   TARJETA HERO (Inicio)
+   ========================================= */
+.hero-card {
+    background-color: var(--color-card-bg);
+    border-radius: 16px; 
+    overflow: hidden;
+    max-width: 900px;
+    margin-top: 3vh;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.hero-photo {
+    height: 100%;
+    min-height: 400px;
+    background-color: #f8fafc;
+}
+
+.hero-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-info {
+    padding: 3rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-name {
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: var(--color-indigo);
+    margin-bottom: 0.2rem;
+}
+
+.hero-subtitle {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--color-magenta); /* Acento magenta para tu carrera */
+}
+
+.detail-item {
+    margin-bottom: 1rem;
+}
+
+.detail-item strong {
+    display: block;
+    color: var(--color-indigo);
+    font-size: 0.85rem;
+    font-weight: 700;
+    margin-bottom: 0.2rem;
+}
+
+.detail-item span {
+    display: block;
+    color: var(--color-text-muted);
+    font-size: 0.85rem;
+    line-height: 1.4;
+}
+
+/* Barra Inferior de la Tarjeta */
+.hero-footer {
+    background-color: var(--color-plum); /* Utilizamos el morado oscuro aquí */
+    width: 100%;
+    padding: 1.2rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.hero-footer a {
+    color: #ffffff;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.hero-footer a:hover {
+    background-color: var(--color-magenta); /* Al pasar el mouse brillan en magenta */
+    color: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(216, 106, 202, 0.4);
+}
+
+/* =========================================
+   SECCIONES Y CONTENEDORES
+   ========================================= */
+.text-dark-blue { color: var(--color-indigo) !important; }
+.text-primary-accent { color: var(--color-magenta) !important; }
+.text-muted-dark { color: var(--color-text-main) !important; }
+.text-white { color: #ffffff !important; }
+
+/* Títulos de sección (Fuera de las tarjetas, sobre el fondo oscuro) */
+.section-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 3px solid var(--color-magenta); /* Línea magenta debajo del título */
+    padding-bottom: 0.5rem;
+    display: inline-block;
+}
+
+.content-box {
+    background-color: var(--color-card-bg);
+    padding: 2.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    border: none;
+    border-radius: 16px; 
+}
+
+/* =========================================
+   ETIQUETAS (TAGS) - Tecnologías
+   ========================================= */
+.tag-tech {
+    /* Fondo con un toque ultra suave de magenta */
+    background-color: rgba(216, 106, 202, 0.1); 
+    color: var(--color-indigo); /* Texto en índigo para leerse fácil */
+    padding: 0.4rem 1rem;
+    font-size: 0.75rem;
+    border: 1px solid var(--color-magenta); /* Borde magenta vibrante */
+    border-radius: 20px; 
+    font-weight: 700;
+    transition: all 0.2s ease;
+}
+
+.tag-tech:hover {
+    background-color: var(--color-magenta);
+    color: #ffffff;
+}
+
+/* =========================================
+   ACORDEÓN DE CONOCIMIENTOS
+   ========================================= */
+.accordion-item {
+    border-color: rgba(33, 0, 127, 0.1) !important; /* Separador sutil índigo */
+    background-color: transparent !important;
+}
+
+.accordion-button {
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: none !important;
+    padding: 1.2rem 0 !important;
+    font-size: 0.95rem;
+    color: var(--color-indigo) !important; /* Títulos del acordeón en Índigo */
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: transparent !important;
+    color: var(--color-magenta) !important; /* Al abrirse se vuelve Magenta */
+}
+
+.accordion-button::after {
+    filter: opacity(0.6); 
+}
+
+.accordion-body {
+    padding: 0 0 1.5rem 0 !important;
+    line-height: 1.6;
+}
+
+/* Animación JS para el cambio de vistas */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
